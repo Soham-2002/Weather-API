@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather API</title>
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap"></script>
 </head>
+
 <body>
-    
+    <div class="container">
+        <h1>Weather API</h1>
+        <button id="fetchDataBtn">Fetch Data</button>
+
+        <div id="map"></div>
+
+        <div id="weatherData">
+            <h2>Your Weather Data</h2>
+            <div id="details"></div>
+        </div>
+    </div>
 </body>
+
 </html>
